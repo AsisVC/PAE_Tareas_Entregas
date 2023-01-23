@@ -67,7 +67,8 @@ nav ul li a:hover{
 .contenido{
     position: absolute;
     top: 50%;
-    left: 55%;
+    right: 150px;
+    width: 400px;
     transform: translateY(-50%);
 }
 
@@ -106,9 +107,12 @@ nav ul li a:hover{
     background-color: white;
 }
 
-.trayectoria img{
-    height: auto;
+.trayectoria .imagen{
+    height: 500px;
     width: 430px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/fotoHistoria.jpeg);
 }
 
 .trayectoria .texto-trayectoria{
@@ -153,11 +157,10 @@ nav ul li a:hover{
     padding: 100px 0px;
 }
 
-.titulo h2{
+.hobbies h2{
     color: white;
     font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -221,7 +224,6 @@ nav ul li a:hover{
 .fotos h1{
     color: white;
     font-size: 75px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
     position: relative;
@@ -266,7 +268,6 @@ nav ul li a:hover{
 .habilidades h1{
     color: white;
     font-size: 75px;
-    width: 1130px;
     margin: 45px auto;
     text-align: center;
 }
@@ -275,6 +276,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+    padding: 0 15px;
 }
 
 .habilidades .row .skill{
@@ -402,8 +404,59 @@ footer .final{
 
 /*Media Queries*/
 
-/*
-@media screen and (max-width: ){
+
+@media screen and (max-width: 1074px){
+    .principal{
+        display: block;
+    }
+
+    .trayectoria .imagen{
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    
+    .trayectoria .texto-trayectoria{
+        margin: 0 auto;
+    }
+
+    .hobbies h2{
+        font-size: 50px;
+    }
+
+    .fotos h1{
+        font-size: 50px;
+    }
+
+    .habilidades h1{
+        font-size: 50px;
+    }
+
 
 }
-*/
+
+@media screen and (max-width: 1057px){
+    .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+    }
+
+    .box .card{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 995px){
+    header nav ul{
+        position: absolute;
+        top: -100px;
+    }
+}
+
+@media screen and (max-width: 793px){
+    .contenido{
+        right: 20px;
+        width: 400px;
+    }
+}

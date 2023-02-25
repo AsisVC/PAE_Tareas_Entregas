@@ -1,0 +1,33 @@
+@mixin nomargin{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin marginAuto{
+    margin: 0 auto;
+}
+
+@mixin tablet1{
+    @media screen and (max-width: 1074px){
+        @content;
+    }
+}
+
+@mixin tablet2{
+    @media screen and (max-width: 1057px){
+        @content;
+    }
+}
+
+@mixin mobile1{
+    @media screen and (max-width: 995px){
+        @content;
+    }
+}
+
+@mixin mobile2{
+    @media screen and (max-width: 793px){
+        @content;
+    }
+}

@@ -1,0 +1,18 @@
+<section class="hobbies">
+        <h2>Mis Hobbies</h2>
+
+        <div class="box">
+            {{#each hobbies}}
+            <div class="card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h5>{{this.titulo}}</h5>
+                <div class="texto">
+                    <p>{{this.desc}}</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Lee mas</a>
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </section>

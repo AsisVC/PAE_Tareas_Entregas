@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.search{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+a{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h5{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}

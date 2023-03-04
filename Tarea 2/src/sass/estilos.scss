@@ -1,0 +1,448 @@
+@import "mixins";
+@import "colors";
+
+html, body{
+    @include nomargin;
+    font-family: sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/fotoPortada.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.nombre{
+    color: $page-colour;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+span{
+    color: $primary-colour;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+    a{
+        color: $page-colour;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &:hover{
+            @extend span;
+        }
+    }
+}
+
+header nav ul{
+    @include mobile1{
+        position: absolute;
+        top: -100px;
+    }
+}
+
+.btn{
+    background-color: $primary-colour;
+    color: $page-colour;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+
+    &:hover{
+        @extend span;
+        background-color: $page-colour;
+    }
+}
+
+.contenido{
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    width: 400px;
+    transform: translateY(-50%);
+
+    @include mobile2{
+        right: 20px;
+        width: 400px;
+    }
+
+    h1{
+    @extend .btn;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+
+        &:hover{
+            @extend span;
+        }
+    }
+
+    h3{
+        color: $page-colour;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    h4{
+        color: $page-colour;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+}
+
+.trayectoria{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: $page-colour;
+
+    .imagen{
+        height: 500px;
+        width: 430px;
+        background-size: cover;
+        background-position: center;
+        background-image: url(/img/fotoHistoria.jpeg);
+    
+        @include tablet1{
+            @include marginAuto;
+            margin-bottom: 25px;
+        }
+    }
+
+    .texto-trayectoria{
+        width: 550px;
+
+        h2{
+            color: $text-colour;
+            font-size: 51px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        h5{
+            @extend span;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+
+        p{
+            color: $text-colour;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+    
+        @include tablet1{
+            @include marginAuto;
+        }
+    }
+}
+
+.principal{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include tablet1{
+        display: block;
+    }
+}
+
+.hobbies{
+    background-color: $primary-colour;
+    width: 100%;
+    padding: 100px 0px;
+
+    h2{
+        color: $page-colour;
+        font-size: 75px;
+        margin: 20px auto;
+        text-align: center;
+    
+        @include tablet1{
+            font-size: 50px;
+        }
+    }
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+    .card{
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: $page-colour;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        i{
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0px;
+            @extend span;
+        }
+
+        h5{
+            color: $text-colour;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .texto p{
+            @extend span;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+
+        .texto .button{
+            background-color: $primary-colour;
+            color: $page-colour;
+            text-decoration: none;
+            border-radius: 2px solid transparent;
+            font-weight: bold;
+            padding: 9px 22px;
+            border-radius: 30px;
+        }
+
+        .texto .button:hover{
+            border: 2px solid $primary-colour;
+            background-color: transparent;
+            cursor: pointer;
+            @extend span;
+        }
+    
+        @include tablet2{
+            @include marginAuto;
+        }
+    }
+
+    @include tablet2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+    }
+}
+
+.fotos h1{
+    color: $page-colour;
+    font-size: 75px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: $text-colour;
+        top: 50%;
+        z-index: -1;
+    }
+
+    span{
+        background-color: $page-colour;
+        padding: 0 15px;
+    }
+
+    @include tablet1{
+        font-size: 50px;
+    }
+}
+
+.fotos .img-galeria{
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+
+    img{
+        width: 100%;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+.habilidades{
+    background-color: $primary-colour;
+    width: 100%;
+    padding: 70px 0px;
+
+    h1{
+        color: $page-colour;
+        font-size: 75px;
+        margin: 45px auto;
+        text-align: center;
+    
+        @include tablet1{
+            font-size: 50px;
+        }
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+        padding: 0 15px;
+
+        .skill{
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: $page-colour;
+
+            i{
+                font-size: 40px;
+                margin-bottom: 10px;
+                @extend span;
+            }
+
+            h2{
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.contacto{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: $page-colour;
+
+    img{
+        height: auto;
+        width: 430px;
+    }
+
+    .texto-contacto{
+        width: 550px;
+
+        h2{
+            color: $text-colour;
+            font-size: 51px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        h5{
+            @extend span;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+
+        p{
+            color: $text-colour;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+    }
+    
+}
+
+.info{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: $primary-colour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        &:nth-child(1){
+            font-size: 30px;
+            color: $page-colour;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        &:nth-child(2){
+            color: $page-colour;
+            font-size: 17px;
+            width: 500px;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+
+    .social{
+        display: flex;
+
+        a{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $page-colour;
+            border-radius: 50%;
+            margin: 22px 10px;
+            @extend span;
+            text-decoration: none;
+            font-size: 20px;
+
+            &:hover{
+                transform: scale(1.3);
+                transition: .3s;
+            }
+        }
+    }
+
+    .final{
+        color: $text-colour;
+        bottom: 35px;
+        font-size: 14px;
+    }
+}

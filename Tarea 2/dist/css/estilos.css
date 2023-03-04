@@ -1,0 +1,400 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/fotoPortada.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.nombre {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+span, footer .social a, .contacto .texto-contacto h5, .habilidades .row .skill i, .box .card .texto .button:hover, .box .card .texto p, .box .card i, .trayectoria .texto-trayectoria h5, .btn:hover, .contenido h1:hover, nav ul li a:hover {
+  color: #187eb9;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 995px) {
+  header nav ul {
+    position: absolute;
+    top: -100px;
+  }
+}
+
+.btn, .contenido h1 {
+  background-color: #187eb9;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+.btn:hover, .contenido h1:hover {
+  background-color: white;
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  width: 400px;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 793px) {
+  .contenido {
+    right: 20px;
+    width: 400px;
+  }
+}
+.contenido h1 {
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+.contenido h3 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.contenido h4 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.trayectoria {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: white;
+}
+.trayectoria .imagen {
+  height: 500px;
+  width: 430px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/img/fotoHistoria.jpeg);
+}
+@media screen and (max-width: 1074px) {
+  .trayectoria .imagen {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+.trayectoria .texto-trayectoria {
+  width: 550px;
+}
+.trayectoria .texto-trayectoria h2 {
+  color: black;
+  font-size: 51px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.trayectoria .texto-trayectoria h5 {
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.trayectoria .texto-trayectoria p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 1074px) {
+  .trayectoria .texto-trayectoria {
+    margin: 0 auto;
+  }
+}
+
+.principal {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1074px) {
+  .principal {
+    display: block;
+  }
+}
+
+.hobbies {
+  background-color: #187eb9;
+  width: 100%;
+  padding: 100px 0px;
+}
+.hobbies h2 {
+  color: white;
+  font-size: 75px;
+  margin: 20px auto;
+  text-align: center;
+}
+@media screen and (max-width: 1074px) {
+  .hobbies h2 {
+    font-size: 50px;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.box .card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: white;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.box .card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+}
+.box .card h5 {
+  color: black;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.box .card .texto p {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.box .card .texto .button {
+  background-color: #187eb9;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+}
+.box .card .texto .button:hover {
+  border: 2px solid #187eb9;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 1057px) {
+  .box .card {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1057px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+  }
+}
+
+.fotos h1 {
+  color: white;
+  font-size: 75px;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.fotos h1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  z-index: -1;
+}
+.fotos h1 span, .fotos h1 footer .social a, footer .social .fotos h1 a, .fotos h1 .contacto .texto-contacto h5, .contacto .texto-contacto .fotos h1 h5, .fotos h1 .habilidades .row .skill i, .habilidades .row .skill .fotos h1 i, .fotos h1 nav ul li a:hover, nav ul li .fotos h1 a:hover, .fotos h1 .btn:hover, .fotos h1 .contenido h1:hover, .contenido .fotos h1 h1:hover, .fotos h1 .trayectoria .texto-trayectoria h5, .trayectoria .texto-trayectoria .fotos h1 h5, .fotos h1 .box .card i, .box .card .fotos h1 i, .fotos h1 .box .card .texto p, .box .card .texto .fotos h1 p, .fotos h1 .box .card .texto .button:hover, .box .card .texto .fotos h1 .button:hover {
+  background-color: white;
+  padding: 0 15px;
+}
+@media screen and (max-width: 1074px) {
+  .fotos h1 {
+    font-size: 50px;
+  }
+}
+
+.fotos .img-galeria {
+  width: 80%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.fotos .img-galeria img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.habilidades {
+  background-color: #187eb9;
+  width: 100%;
+  padding: 70px 0px;
+}
+.habilidades h1 {
+  color: white;
+  font-size: 75px;
+  margin: 45px auto;
+  text-align: center;
+}
+@media screen and (max-width: 1074px) {
+  .habilidades h1 {
+    font-size: 50px;
+  }
+}
+.habilidades .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  padding: 0 15px;
+}
+.habilidades .row .skill {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: white;
+}
+.habilidades .row .skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.habilidades .row .skill h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contacto {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: white;
+}
+.contacto img {
+  height: auto;
+  width: 430px;
+}
+.contacto .texto-contacto {
+  width: 550px;
+}
+.contacto .texto-contacto h2 {
+  color: black;
+  font-size: 51px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.contacto .texto-contacto h5 {
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.contacto .texto-contacto p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.info {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #187eb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+footer .social {
+  display: flex;
+}
+footer .social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  margin: 22px 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+footer .social a:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+footer .final {
+  color: black;
+  bottom: 35px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

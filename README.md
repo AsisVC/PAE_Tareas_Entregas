@@ -1,4 +1,4 @@
-Descripcion: Esta es una api de tareas con todo el CRUD hecho que te da capacidad de realizar las actividades principales utilizando mongodb para guardar tus tareas.
+Descripcion: En la branch Tarea5, se realizo una api de tareas con todo el CRUD hecho que te da capacidad de realizar las actividades principales utilizando mongodb para guardar tus tareas.
 
 Tecnologias:
 -MongoDB Atlas

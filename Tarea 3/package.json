@@ -1,0 +1,20 @@
+{
+  "name": "tarea-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon .",
+    "styles": "sass src/sass:assets",
+    "style:dev": "sass src/sass:assets --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "node": "^19.6.0"
+  }
+}

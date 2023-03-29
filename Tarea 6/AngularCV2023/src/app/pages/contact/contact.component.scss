@@ -1,0 +1,40 @@
+.contacto {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+  }
+  .contacto img {
+    height: auto;
+    width: 430px;
+  }
+  .contacto .texto-contacto {
+    width: 550px;
+  }
+  .contacto .texto-contacto h2 {
+    color: black;
+    font-size: 51px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .contacto .texto-contacto h5 {
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .contacto .texto-contacto p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  
+  .info {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

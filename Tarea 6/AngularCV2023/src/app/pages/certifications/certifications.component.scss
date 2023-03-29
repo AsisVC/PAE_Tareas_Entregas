@@ -1,0 +1,39 @@
+
+.habilidades {
+    background-color: rgb(148, 147, 147);
+    width: 100%;
+    padding: 70px 0px;
+  }
+  .habilidades h1 {
+    color: white;
+    font-size: 75px;
+    margin: 45px auto;
+    text-align: center;
+  }
+  @media screen and (max-width: 1074px) {
+    .habilidades h1 {
+      font-size: 50px;
+    }
+  }
+  .habilidades .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    padding: 0 15px;
+  }
+  .habilidades .row .skill {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+  }
+  .habilidades .row .skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .habilidades .row .skill h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
